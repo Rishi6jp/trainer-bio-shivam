@@ -71,7 +71,7 @@ export function Testimonials() {
         >
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="w-full md:w-1/3 flex-shrink-0 px-4">
-              <Card className="h-full">
+              <Card className="h-full border-beige-medium">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4 mb-4">
                     <Image
@@ -79,7 +79,7 @@ export function Testimonials() {
                       alt={testimonial.name}
                       width={60}
                       height={60}
-                      className="rounded-full object-cover"
+                      className="rounded-full object-cover border-2 border-beige-medium"
                     />
                     <div>
                       <h3 className="font-bold">{testimonial.name}</h3>
@@ -87,7 +87,7 @@ export function Testimonials() {
                     </div>
                   </div>
                   <div className="relative">
-                    <Quote className="h-8 w-8 text-primary/20 absolute -top-2 -left-2" />
+                    <Quote className="h-8 w-8 text-beige-medium absolute -top-2 -left-2" />
                     <p className="relative z-10 text-muted-foreground">{testimonial.content}</p>
                   </div>
                 </CardContent>
@@ -97,11 +97,21 @@ export function Testimonials() {
         </div>
       </div>
       <div className="flex justify-center mt-6 gap-2">
-        <Button variant="outline" size="icon" onClick={prevSlide} className="rounded-full">
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={prevSlide}
+          className="rounded-full border-beige-dark text-beige-dark hover:bg-beige-light"
+        >
           <ChevronLeft className="h-4 w-4" />
           <span className="sr-only">Previous testimonials</span>
         </Button>
-        <Button variant="outline" size="icon" onClick={nextSlide} className="rounded-full">
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={nextSlide}
+          className="rounded-full border-beige-dark text-beige-dark hover:bg-beige-light"
+        >
           <ChevronRight className="h-4 w-4" />
           <span className="sr-only">Next testimonials</span>
         </Button>
