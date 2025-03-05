@@ -1,0 +1,32 @@
+body{
+    background-color: greenyellow;
+}
+
+.heading{
+    font-size: large;
+}
+
+#tabs{
+    display: flex;
+    margin-left: 70px;
+    justify-content: center;
+    justify-content: space-between;
+    font-weight: 200px;
+}
+#h1{
+    margin: 10px;
+}
+#mon{
+    justify-content: center;
+    margin-right: 200px;
+}
+#form{
+    font-size: 200px;
+    justify-content: center;
+}
+#is{
+    margin-left: 500px;
+}
+#asd{
+    margin-left: 420px;
+}
